@@ -1,4 +1,4 @@
-﻿# Brody - Your Game Dev Homie.
+# ⚡ Brody — Your Game Dev Homie.
 
 > **The ultimate autonomous AI agent for Unity.** Generates scripts, edits scenes, automates tools, and researches online directly inside the Unity Editor.
 
@@ -8,48 +8,48 @@
 
 ---
 
-## ðŸŒŸ Why Brody?
+## 🌟 Why Brody?
 
 Unlike ordinary LLM code generators that only spit out snippets in a separate browser tab, **Brody directly controls and orchestrates the Unity Editor**:
 
-- ðŸ§  **Autonomous Engine Operations**: Creates GameObjects, wires components, modifies transforms, and manages prefabs automatically.
-- ðŸŒ **In-Editor Web Search**: Need documentation, asset references, or forum answers? Brody researches the live web and Unity docs right inside your chat window. You never need to leave Unity.
-- ðŸ›¡ï¸ **Roslyn Pre-Compiler Shield**: Every C# script synthesized by Brody undergoes pre-compilation AST validation to eliminate compiler errors and deprecated APIs before saving.
-- âš¡ **Zero-Latency Streaming**: Powered by high-speed neural reasoning engines with real-time SSE streaming.
-- âª **1-Click Safety Checkpoints**: Serialized undo checkpoints ensure you can instantly revert any scene or script modifications with a single click.
+- 🧠 **Autonomous Engine Operations**: Creates GameObjects, wires components, modifies transforms, and manages prefabs automatically.
+- 🌐 **In-Editor Web Search**: Need documentation, asset references, or forum answers? Brody researches the live web and Unity docs right inside your chat window. You never need to leave Unity.
+- 🛡️ **Roslyn Pre-Compiler Shield**: Every C# script synthesized by Brody undergoes pre-compilation AST validation to eliminate compiler errors and deprecated APIs before saving.
+- ⚡ **Zero-Latency Streaming**: Powered by high-speed neural reasoning engines with real-time SSE streaming.
+- ⏪ **1-Click Safety Checkpoints**: Serialized undo checkpoints ensure you can instantly revert any scene or script modifications with a single click.
 
 ---
 
-## ðŸš€ Installation via Unity Package Manager (UPM)
+## 🚀 Installation via Unity Package Manager (UPM)
 
 ### Method 1: Git URL (Recommended)
-1. In Unity Editor, open **Window** âž” **Package Manager**.
-2. Click the **+** icon in the top-left toolbar.
+1. In Unity Editor, open **Window** ➔ **Package Manager**.
+2. Click the **`+`** icon in the top-left toolbar.
 3. Select **Add package from git URL...**
 4. Paste the repository URL:
-   ``text
+   ```text
    https://github.com/DecNet-Games/Brody.git
-   ``
+   ```
 5. Click **Add**. Unity will import and initialize Brody automatically.
 
-### Method 2: Add to Packages/manifest.json
-Open your Unity project's Packages/manifest.json and add to the dependencies object:
-``json
+### Method 2: Add to `Packages/manifest.json`
+Open your Unity project's `Packages/manifest.json` and add to the `dependencies` object:
+```json
 {
   "dependencies": {
     "com.decnet.brodyai": "https://github.com/DecNet-Games/Brody.git"
   }
 }
-``
+```
 
 ---
 
-## ðŸŽ® Quickstart
+## 🎮 Quickstart
 
 1. **Open the Brody Window**:
-   - Go to top menu: **Brody âž” Open Brody Chat** (or press Ctrl+Shift+B / Cmd+Shift+B).
+   - Go to top menu: **Brody ➔ Open Brody Chat** (or press `Ctrl+Shift+B` / `Cmd+Shift+B`).
 2. **Connect Your Account**:
-   - Click **Brody âž” Account & Settings âž” Cloud Sign In**.
+   - Click **Brody ➔ Account & Settings ➔ Cloud Sign In**.
    - Enter your Brody Access Key or sign in via browser.
 3. **Start Building**:
    - Ask Brody: *"Create a smooth 2D character controller with double-jump, coyote time, and particle effects."*
@@ -57,15 +57,15 @@ Open your Unity project's Packages/manifest.json and add to the dependencies obj
 
 ---
 
-## ðŸ—ºï¸ Upcoming Features (Roadmap)
+## 🗺️ Upcoming Features (Roadmap)
 
-- ðŸŽ¨ **Native 3D Mesh & Asset Synthesis**: Generate low-poly 3D models, textures, and PBR materials directly in the Unity scene via Brody's autonomous toolchain.
-- ðŸ”Œ **Visual Scripting & Shader Graph**: Automated AI node graph authoring and wiring.
-- ðŸ’» **Local Model Support (BYOK & Ollama)**: Run private local GGUF models offline.
+- 🎨 **Native 3D Mesh & Asset Synthesis**: Generate low-poly 3D models, textures, and PBR materials directly in the Unity scene via Brody's autonomous toolchain.
+- 🔌 **Visual Scripting & Shader Graph**: Automated AI node graph authoring and wiring.
+- 💻 **Local Model Support (BYOK & Ollama)**: Run private local GGUF models offline.
 
 ---
 
-## ðŸ“„ License & Support
+## 📄 License & Support
 
 Brody is developed and maintained by **[Decnet Games](https://brody.decnetgames.com)**.  
 For documentation, tutorials, and cloud access keys, visit **[brody.decnetgames.com](https://brody.decnetgames.com)**.
