@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi="http://www.w3.org/2001/XMLSchema-instance"
+    engine="UnityEngine.UIElements"
+    editor="UnityEditor.UIElements"
+>
+    <!-- Brody AI Pro-Style App Container -->
+    <ui:VisualElement class="app-container">
+        
+        <!-- Header -->
+        <ui:VisualElement class="header">
+            <ui:VisualElement class="header-left">
+                <ui:Image name="header-banner" class="header-banner" />
+                <ui:Label name="lbl-plan-badge" text="FREE" class="plan-badge" />
+            </ui:VisualElement>
+            
+            <ui:Label name="header-title" text="New chat" class="header-title" />
+            
+            <ui:VisualElement class="header-right">
+                <ui:Button name="btn-new-chat" tooltip="New Chat" class="icon-btn" />
+                <ui:Button name="btn-clear-chat" tooltip="Clear Chat" class="icon-btn" />
+                <ui:Button name="btn-history" tooltip="History" class="icon-btn" />
+                <ui:Button name="btn-settings" tooltip="Settings" class="icon-btn" />
+                <ui:Button name="btn-account" tooltip="Account" class="icon-btn" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="main-body-row">
+            
+            <!-- History Sidebar (Hidden by default) -->
+            <ui:VisualElement name="history-sidebar" class="history-sidebar" style="display: none;">
+                <ui:Label text="Chat History" class="history-title" />
+                <ui:ScrollView name="history-scroll" class="history-scroll">
+                    <!-- History items injected here -->
+                </ui:ScrollView>
+            </ui:VisualElement>
+
+            <!-- Main Chat Area with Watermark -->
+            <ui:VisualElement class="main-body">
+                <!-- Logo Watermark (Brody AI brand logo) -->
+                <ui:Image name="watermark-logo" class="watermark-logo" pickingMode="Ignore" />
+
+                <!-- Chat Content -->
+                <ui:ScrollView name="chat-scroll" class="chat-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden">
+                    <ui:VisualElement name="chat-container">
+                        <!-- Messages go here -->
+                    </ui:VisualElement>
+                </ui:ScrollView>
+                
+                <!-- Bottom Gradient Fade (Optional for seamless integration) -->
+                <ui:VisualElement class="bottom-fade" pickingMode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Footer / Input Area -->
+        <ui:VisualElement class="footer">
+            
+            <ui:VisualElement class="input-container">
+                
+                <!-- Live Attachment Chips Container (Right above + Add attachment button) -->
+                <ui:VisualElement name="attachment-chips-container" class="attachment-chips-container" style="display: none;" />
+
+                <!-- Top row of input container -->
+                <ui:VisualElement class="input-top-row">
+                    <ui:VisualElement style="flex-direction: row; align-items: center;">
+                        <ui:Button name="btn-attach" text="+ Add attachment" class="attach-btn" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                
+                <!-- Approval Bar (inline — Ask in chat input, only for write/destructive when auto-approve OFF) -->
+                <ui:VisualElement name="approval-bar" class="approval-bar" style="display: none;">
+                    <ui:Label name="approval-label" class="approval-label" text="Approve this action?" />
+                    <ui:Label name="approval-desc" class="approval-desc" text="" />
+                    <ui:Button name="btn-approve" text="Approve" class="approve-btn" />
+                    <ui:Button name="btn-deny" text="Deny" class="deny-btn" />
+                </ui:VisualElement>
+
+                <!-- Text Field Row -->
+                <ui:VisualElement class="input-box-row" style="position: relative;">
+                    <ui:TextField name="input-field" multiline="true" placeholder-text="Ask Brody AI... Drag GameObjects from Hierarchy or type @ to mention" class="input-textfield" />
+                    <ui:Button name="btn-stop" text="⏹" class="send-btn stop-btn" style="display: none; background-color: #DC2626; border-radius: 8px;" tooltip="Stop Generation" />
+                    <ui:Button name="btn-send" text="↑" class="send-btn" />
+                </ui:VisualElement>
+                
+            </ui:VisualElement>
+            
+            <!-- Bottom Toolbar Toggles -->
+            <ui:VisualElement class="toolbar-bottom">
+                <ui:VisualElement class="toolbar-left">
+                    <ui:Toggle name="tgl-auto-approve" label="Auto-approve" class="toolbar-toggle" />
+                </ui:VisualElement>
+                
+                <ui:VisualElement class="toolbar-right">
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+        </ui:VisualElement>
+        
+    </ui:VisualElement>
+</ui:UXML>

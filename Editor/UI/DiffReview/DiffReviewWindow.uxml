@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML
+    xmlns:ui="UnityEngine.UIElements"
+    xmlns:uie="UnityEditor.UIElements"
+    xsi="http://www.w3.org/2001/XMLSchema-instance"
+    engine="UnityEngine.UIElements"
+    editor="UnityEditor.UIElements"
+>
+    <!-- Brody AI · Interactive Diff Review (self-contained, UI Toolkit) -->
+    <ui:VisualElement class="drv-root">
+
+        <!-- Header -->
+        <ui:VisualElement class="drv-header">
+            <ui:Label text="DIFF REVIEW" class="drv-header-title" />
+            <ui:Label name="drv-file" text="" class="drv-file" />
+            <ui:VisualElement style="flex-grow: 1;" />
+            <ui:Label name="drv-nav" text="" class="drv-nav" />
+            <ui:Button name="drv-prev" text="‹ Prev" class="drv-nav-btn" />
+            <ui:Button name="drv-next" text="Next ›" class="drv-nav-btn" />
+            <ui:Button name="drv-clear" text="Clear queue" class="drv-nav-btn" />
+        </ui:VisualElement>
+
+        <!-- Summary bar -->
+        <ui:VisualElement class="drv-summary">
+            <ui:Label name="drv-summary-text" text="" class="drv-summary-text" />
+            <ui:Button name="drv-apply" text="Apply accepted hunks" class="drv-apply-btn" />
+        </ui:VisualElement>
+
+        <!-- Side-by-side diff panels -->
+        <ui:VisualElement class="drv-panes">
+            <ui:VisualElement class="drv-pane">
+                <ui:Label text="BEFORE" class="drv-pane-header drv-before-header" />
+                <ui:ScrollView name="drv-before-scroll" class="drv-scroll" mode="Vertical" />
+            </ui:VisualElement>
+            <ui:VisualElement class="drv-divider" />
+            <ui:VisualElement class="drv-pane">
+                <ui:Label text="AFTER" class="drv-pane-header drv-after-header" />
+                <ui:ScrollView name="drv-after-scroll" class="drv-scroll" mode="Vertical" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,21 @@
+{
+  "name": "com.decnet.brodyai",
+  "version": "1.0.0",
+  "displayName": "Brody AI",
+  "description": "The ultimate autonomous AI agent for Unity. Generates scripts, edits scenes, automates tools, and researches online directly inside the Unity Editor.",
+  "unity": "2022.3",
+  "author": {
+    "name": "Decnet Games",
+    "email": "contact@decnetgames.com",
+    "url": "https://brody.decnetgames.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DecNet-Games/Brody.git"
+  },
+  "homepage": "https://brody.decnetgames.com",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
+    "com.unity.test-framework": "1.1.33"
+  }
+}
