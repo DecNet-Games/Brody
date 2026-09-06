@@ -3,8 +3,10 @@
 > **Brody** is an autonomous AI assistant and engine orchestration agent that lives natively inside the Unity Editor. Build games 10x faster without ever leaving your workspace.
 
 [![Unity 2021.3+](https://img.shields.io/badge/Unity-2021.3%2B%20%7C%202022.3%2B%20%7C%20Unity%206-black?logo=unity)](https://unity.com/)
+
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-orange.svg)](LICENSE)
-[![Website](https://img.shields.io/badge/Website-Decnet%20Games-blue)](https://decnetgames.com)
+
+[![Website](https://img.shields.io/badge/Website-Decnet%20Games-blue)](https://brody.decnetgames.com)
 
 ---
 
