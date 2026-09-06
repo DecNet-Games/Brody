@@ -1,4 +1,4 @@
-# Brody — Autonomous AI Game Developer for Unity
+# Brody — Your Game Dev Homie.
 
 > **Brody** is an autonomous AI assistant and engine orchestration agent that lives natively inside the Unity Editor. Build games 10x faster without ever leaving your workspace.
 
