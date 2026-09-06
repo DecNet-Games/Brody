@@ -1,21 +1,4 @@
-/* ==========================================================================
-   Brody AI - Dark OLED Theme (Brand Amber/Gold & Coral)
-   Palette:
-     • App bg        #090A0F  (deep OLED dark)
-     • Panel bg      #0E1017  (header / footer / sidebar)
-     • Card bg       #131620  (cards, popups)
-     • Raised bg     #1A1D2A  (hover surfaces)
-     • Inset bg      #0C0E14  (input well, code)
-     • Hairline      rgba(255,255,255,0.07)  (subtle borders)
-     • Hairline+     rgba(255,255,255,0.12)  (stronger borders)
-     • Brand Coral   #FF6B4A  (focus ring, primary accents, AI border)
-     • Brand Gold    #F4D03F  (highlights, badges, secondary accents)
-     • Emerald       #10B981  (status ready, success)
-     • Text primary  #F8FAFC  • secondary #CBD5E1 • muted #94A3B8 • faint #64748B
-   ========================================================================== */
-
-/* ─── 1. Global & Layout ─────────────────────────────────────────────────── */
-.app-container {
+﻿.app-container {
     flex-grow: 1;
     background-color: #090A0F;
     display: flex;
@@ -23,8 +6,6 @@
     color: #CBD5E1;
     font-size: 13px;
 }
-
-/* ─── 2. Header ──────────────────────────────────────────────────────────── */
 .header {
     flex-direction: row;
     justify-content: space-between;
@@ -36,7 +17,6 @@
     height: 48px;
     flex-shrink: 0;
 }
-
 .header-left {
     flex-direction: row;
     align-items: center;
@@ -45,7 +25,6 @@
     min-width: 120px;
     flex-shrink: 0;
 }
-
 .header-banner {
     height: 24px;
     width: 130px;
@@ -53,15 +32,12 @@
     margin-right: 8px;
     align-self: center;
 }
-
 .header-logo {
     display: none;
 }
-
 .header-icon {
     display: none;
 }
-
 .plan-badge {
     font-size: 9px;
     -unity-font-style: bold;
@@ -76,7 +52,6 @@
     letter-spacing: 0.5px;
     flex-shrink: 0;
 }
-
 .header-title {
     color: #64748B;
     font-size: 12px;
@@ -90,14 +65,12 @@
     margin-left: 8px;
     margin-right: 8px;
 }
-
 .header-right {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     flex-shrink: 0;
 }
-
 .icon-btn {
     background-color: transparent;
     border-width: 0;
@@ -116,22 +89,17 @@
 .icon-btn:hover {
     background-color: rgba(255, 255, 255, 0.08);
 }
-
-/* ─── 3. Main Body & Logo Watermark ──────────────────────────────────────── */
 .main-body-row {
     flex-direction: row;
     flex-grow: 1;
     overflow: hidden;
 }
-
 .main-body {
     flex-grow: 1;
     position: relative;
     background-color: #090A0F;
     min-width: 0;
 }
-
-/* Giant Emblem Watermark — subtle translucent background emblem (matching website) */
 .watermark-logo {
     position: absolute;
     top: 6%;
@@ -141,18 +109,14 @@
     opacity: 0.32;
     -unity-background-scale-mode: scale-to-fit;
 }
-
-/* Fallback text watermark hidden now */
 .watermark-bg {
     display: none;
 }
-
 .chat-scroll {
     flex-grow: 1;
     min-width: 0;
     overflow-x: hidden;
 }
-
 .chat-scroll .unity-scroll-view__horizontal-scroller {
     display: none;
     height: 0;
@@ -160,7 +124,6 @@
     opacity: 0;
     visibility: hidden;
 }
-
 .chat-scroll .unity-scroll-view__content-container {
     flex-grow: 0;
     flex-shrink: 0;
@@ -171,13 +134,11 @@
     min-width: 0;
     width: 100%;
 }
-
 .chat-scroll .unity-scroll-view__content-viewport {
     flex-grow: 1;
     min-width: 0;
     overflow-x: hidden;
 }
-
 #chat-container {
     padding: 16px 20px 24px 20px;
     flex-direction: column;
@@ -188,8 +149,6 @@
     height: auto;
     min-height: 0;
 }
-
-/* ─── 4. Chat Rows ───────────────────────────────────────────────────────── */
 .brody-row {
     margin-bottom: 14px;
     flex-grow: 0;
@@ -204,16 +163,13 @@
     transition-timing-function: ease-out;
     min-width: 0;
 }
-
 .brody-row--user {
     align-self: flex-end;
     justify-content: flex-end;
 }
-
 .brody-row--assistant {
     align-self: flex-start;
 }
-
 .brody-row--tool {
     background-color: rgba(20, 27, 38, 0.62);
     border-width: 1px;
@@ -222,8 +178,6 @@
     border-radius: 8px;
     padding: 8px 12px;
 }
-
-/* ─── 5. Markdown & Code ─────────────────────────────────────────────────── */
 .brody-markdown-view { 
     flex-direction: column; 
     min-width: auto; 
@@ -235,7 +189,6 @@
     max-height: none;
     justify-content: flex-start;
 }
-
 .brody-paragraph {
     margin-top: 4px;
     margin-bottom: 10px;
@@ -253,7 +206,6 @@
     min-height: 0;
     max-height: none;
 }
-
 .brody-header {
     color: #F8FAFC;
     -unity-font-style: bold;
@@ -269,7 +221,6 @@
 .brody-header-h1 { font-size: 16px; color: #FF6B4A; margin-top: 14px; margin-bottom: 8px; }
 .brody-header-h2 { font-size: 14px; color: #F4D03F; margin-top: 12px; margin-bottom: 6px; }
 .brody-header-h3 { font-size: 13px; color: #F8FAFC; margin-top: 10px; margin-bottom: 4px; }
-
 .brody-quote {
     margin-top: 6px;
     margin-bottom: 8px;
@@ -287,7 +238,6 @@
     max-width: 100%;
     flex-shrink: 0;
 }
-
 .brody-list-item {
     margin-left: 8px;
     margin-top: 4px;
@@ -302,7 +252,6 @@
     max-width: 100%;
     flex-shrink: 0;
 }
-
 .brody-code-block {
     margin-top: 6px;
     margin-bottom: 6px;
@@ -313,7 +262,6 @@
     overflow: hidden;
     max-width: 100%;
 }
-
 .brody-code-block-header {
     background-color: rgba(255, 255, 255, 0.04);
     padding: 4px 10px;
@@ -323,14 +271,12 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .brody-code-lang {
     color: #FF8566;
     font-size: 11px;
     -unity-font-style: bold;
     letter-spacing: 0.8px;
 }
-
 .brody-copy-btn {
     background-color: rgba(255, 255, 255, 0.06);
     color: #94A3B8;
@@ -344,16 +290,12 @@
     transition-duration: 0.15s;
 }
 .brody-copy-btn:hover { background-color: #FF6B4A; color: #ffffff; border-color: #FF6B4A; }
-
 .brody-code-scroll { padding: 10px; }
-
 .brody-code-text {
     font-size: 12px;
     color: #F8FAFC;
     letter-spacing: 0.2px;
 }
-
-/* ─── Markdown Tables & Dividers ─────────────────────────────────────────── */
 .brody-markdown-table {
     margin-top: 6px;
     margin-bottom: 4px;
@@ -368,7 +310,6 @@
     width: 100%;
     max-width: 100%;
 }
-
 .brody-table-header-row {
     flex-direction: row;
     background-color: rgba(24, 28, 40, 0.95);
@@ -378,7 +319,6 @@
     flex-shrink: 0;
     height: auto;
 }
-
 .brody-table-row {
     flex-direction: row;
     border-bottom-width: 1px;
@@ -387,17 +327,13 @@
     flex-shrink: 0;
     height: auto;
 }
-
 .brody-markdown-divider {
     height: 1px;
     background-color: rgba(255, 255, 255, 0.12);
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-/* ─── 6. Tool Cards ──────────────────────────────────────────────────────── */
 .brody-tool-card {
-    /* Translucent like the message bubbles so the window background reads through. */
     background-color: rgba(20, 27, 38, 0.72);
     border-radius: 8px;
     border-width: 1px;
@@ -410,12 +346,10 @@
     min-width: 240px;
     overflow: hidden;
 }
-
 .brody-tool-card--has-diff {
     max-width: 95%;
     min-width: 320px;
 }
-
 .brody-tool-card__header {
     background-color: rgba(255, 255, 255, 0.035);
     padding: 4px 10px;
@@ -426,7 +360,6 @@
     min-width: 0;
 }
 .brody-tool-card__header:hover { background-color: rgba(45, 212, 191, 0.08); }
-
 .brody-tool-card__body {
     background-color: rgba(11, 14, 20, 0.5);
     border-top-width: 1px;
@@ -435,16 +368,10 @@
     border-bottom-right-radius: 8px;
     min-width: 0;
 }
-
 .brody-tool-elapsed { font-size: 10px; color: #64748B; margin-right: 6px; letter-spacing: 0.3px; }
-
 .brody-badge--read        { background-color: rgba(255, 255, 255, 0.06); color: #9FB0C8; padding: 2px 7px; border-radius: 4px; font-size: 10px; border-width: 1px; border-color: rgba(255, 255, 255, 0.10); letter-spacing: 0.4px; }
 .brody-badge--medium      { background-color: rgba(217, 119, 6, 0.15); color: #FBBF24; padding: 2px 7px; border-radius: 4px; font-size: 10px; -unity-font-style: bold; border-width: 1px; border-color: rgba(251, 191, 36, 0.25); letter-spacing: 0.4px; }
 .brody-badge--destructive { background-color: rgba(220, 38, 38, 0.16); color: #FCA5A5; padding: 2px 7px; border-radius: 4px; font-size: 10px; -unity-font-style: bold; border-width: 1px; border-color: rgba(248, 113, 113, 0.30); letter-spacing: 0.4px; }
-
-/* ─── 7. Thinking Indicator ──────────────────────────────────────────────── */
-/* A rotating status phrase plus three pulsing dots. Opacity is animated from
-   C# (TypingDots.cs); everything here is static layout and colour only. */
 .brody-typing-dots {
     flex-direction: row;
     align-items: center;
@@ -452,7 +379,6 @@
     margin-top: 2px;
     margin-bottom: 2px;
 }
-
 .brody-typing-dots__label {
     font-size: 12px;
     color: #8FA6C9;
@@ -460,12 +386,10 @@
     margin-right: 8px;
     padding: 0;
 }
-
 .brody-typing-dots__row {
     flex-direction: row;
     align-items: center;
 }
-
 .brody-typing-dots__dot {
     width: 5px;
     height: 5px;
@@ -473,8 +397,6 @@
     background-color: #2DD4BF;
     margin-right: 4px;
 }
-
-/* ─── 8. Footer & Input ──────────────────────────────────────────────────── */
 .footer {
     padding: 12px 28px 16px 28px;
     background-color: #0E1017;
@@ -482,7 +404,6 @@
     border-top-color: rgba(255, 255, 255, 0.08);
     flex-shrink: 0;
 }
-
 .input-container {
     background-color: #0C0E14;
     border-width: 1px;
@@ -497,14 +418,12 @@
     border-color: #FF6B4A;
     background-color: #10131B;
 }
-
 .input-top-row {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4px;
 }
-
 .attach-btn {
     background-color: rgba(255, 255, 255, 0.07);
     border-width: 1px;
@@ -517,14 +436,11 @@
     transition-duration: 0.15s;
 }
 .attach-btn:hover { background-color: rgba(255, 107, 74, 0.12); color: #F8FAFC; border-color: rgba(255, 107, 74, 0.35); }
-
 .context-mini-lbl {
     color: #718096;
     font-size: 11px;
     letter-spacing: 0.4px;
 }
-
-/* ─── Input Attachment Chips ──────────────────────────────────────────────── */
 .attachment-chips-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -533,7 +449,6 @@
     padding-bottom: 2px;
     margin-bottom: 4px;
 }
-
 .attachment-chip {
     flex-direction: row;
     align-items: center;
@@ -546,19 +461,16 @@
     margin-bottom: 4px;
     max-width: 220px;
 }
-
 .attachment-chip:hover {
     border-color: #FF6B4A;
     background-color: rgba(28, 33, 46, 1);
 }
-
 .attachment-chip-icon {
     width: 14px;
     height: 14px;
     margin-right: 5px;
     flex-shrink: 0;
 }
-
 .attachment-chip-name {
     color: #F8FAFC;
     font-size: 11px;
@@ -569,7 +481,6 @@
     white-space: nowrap;
     margin-right: 4px;
 }
-
 .attachment-chip-remove {
     color: #EF4444;
     font-size: 11px;
@@ -580,13 +491,10 @@
     cursor: link;
     border-radius: 3px;
 }
-
 .attachment-chip-remove:hover {
     color: #FFFFFF;
     background-color: #EF4444;
 }
-
-/* ─── User Bubble Attachment Badges ───────────────────────────────────────── */
 .user-attachment-group {
     flex-direction: row;
     flex-wrap: wrap;
@@ -596,7 +504,6 @@
     border-bottom-width: 1px;
     border-bottom-color: rgba(255, 255, 255, 0.09);
 }
-
 .user-attachment-box {
     flex-direction: row;
     align-items: center;
@@ -612,19 +519,16 @@
     transition-property: border-color, background-color;
     transition-duration: 0.15s;
 }
-
 .user-attachment-box:hover {
     border-color: #FF6B4A;
     background-color: rgba(26, 30, 44, 0.95);
 }
-
 .user-attachment-icon {
     width: 16px;
     height: 16px;
     margin-right: 6px;
     flex-shrink: 0;
 }
-
 .user-attachment-name {
     color: #F8FAFC;
     font-size: 11.5px;
@@ -634,7 +538,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
 .user-attachment-ext-badge {
     color: #F4D03F;
     background-color: rgba(244, 208, 63, 0.15);
@@ -644,13 +547,11 @@
     margin-left: 5px;
     flex-shrink: 0;
 }
-
 .input-box-row {
     flex-direction: row;
     align-items: center;
     min-width: 0;
 }
-
 .input-textfield {
     flex-grow: 1;
     background-color: transparent;
@@ -658,7 +559,6 @@
     min-width: 0;
     min-height: 56px;
 }
-
 .input-textfield > .unity-base-field__input {
     background-color: transparent;
     border-width: 0;
@@ -677,8 +577,6 @@
     border-radius: 8px;
     padding: 8px 10px;
 }
-
-/* ─── 9. Send Button ─────────────────────────────────────────────────────── */
 .send-btn {
     background-color: #FF6B4A;
     border-width: 0;
@@ -696,13 +594,10 @@
 .send-btn:hover {
     background-color: #FF8566;
 }
-
 .stop-btn {
     background-color: #DC2626;
 }
 .stop-btn:hover { background-color: #EF4444; }
-
-/* ─── 10. Bottom Toolbar ─────────────────────────────────────────────────── */
 .toolbar-bottom {
     flex-direction: row;
     justify-content: space-between;
@@ -712,12 +607,10 @@
     min-width: 0;
     flex-wrap: wrap;
 }
-
 .toolbar-left, .toolbar-right {
     flex-direction: row;
     align-items: center;
 }
-
 .toolbar-toggle {
     color: #5B6B85;
     font-size: 11px;
@@ -726,7 +619,6 @@
     color: #64748B;
     font-size: 11px;
 }
-
 .toolbar-btn {
     background-color: transparent;
     border-width: 0;
@@ -737,7 +629,6 @@
     transition-duration: 0.15s;
 }
 .toolbar-btn:hover { color: #2DD4BF; }
-
 .toolbar-lbl-btn {
     background-color: transparent;
     border-width: 0;
@@ -748,8 +639,6 @@
     transition-duration: 0.15s;
 }
 .toolbar-lbl-btn:hover { color: #2DD4BF; }
-
-/* ─── 11. Slash Command Popup ────────────────────────────────────────────── */
 .slash-popup-container {
     background-color: #141B26;
     border-width: 1px;
@@ -760,7 +649,6 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-
 .slash-pill {
     background-color: rgba(45, 212, 191, 0.08);
     border-width: 1px;
@@ -780,8 +668,6 @@
     background-image: linear-gradient(to bottom right, #14B8A6, #10B981);
     color: #ffffff;
 }
-
-/* ─── 12. History Sidebar ────────────────────────────────────────────────── */
 .history-sidebar {
     width: 220px;
     background-color: #0F141C;
@@ -791,10 +677,8 @@
     flex-shrink: 0;
     min-width: 0;
 }
-
 .history-title { color: #F1F5F9; font-size: 12px; -unity-font-style: bold; margin-bottom: 12px; letter-spacing: 0.6px; }
 .history-scroll { flex-grow: 1; }
-
 .history-item {
     background-color: transparent;
     border-width: 0;
@@ -809,8 +693,6 @@
 }
 .history-item:hover { background-color: rgba(255, 255, 255, 0.05); color: #F1F5F9; }
 .history-item-active { background-color: rgba(45, 212, 191, 0.12); color: #2DD4BF; border-width: 1px; border-color: rgba(45, 212, 191, 0.25); }
-
-/* ─── 13. Action Cards ───────────────────────────────────────────────────── */
 .action-card {
     background-color: #141B26;
     border-radius: 8px;
@@ -834,8 +716,6 @@
     transition-duration: 0.15s;
 }
 .action-btn:hover  { background-color: #34D399; }
-
-/* ─── 14. Proposed Actions ───────────────────────────────────────────────── */
 .proposed-actions-container { margin-top: 14px; margin-bottom: 14px; background-color: #141B26; border-radius: 8px; overflow: hidden; border-width: 1px; border-color: rgba(255, 255, 255, 0.09); }
 .proposed-actions-header    { background-color: rgba(255, 255, 255, 0.04); flex-direction: row; justify-content: space-between; padding: 6px 12px; align-items: center; }
 .proposed-actions-title     { color: #D6DFEB; -unity-font-style: bold; font-size: 12px; }
@@ -844,18 +724,15 @@
 .btn-approve-all:hover { background-color: #10B981; color: #ffffff; border-color: #10B981; }
 .btn-reject-all  { background-color: rgba(220, 38, 38, 0.16); color: #FCA5A5; border-width: 1px; border-color: rgba(248, 113, 113, 0.30); padding: 4px 10px; border-radius: 6px; font-size: 11px; transition-property: background-color; transition-duration: 0.15s; }
 .btn-reject-all:hover { background-color: #DC2626; color: #ffffff; border-color: #DC2626; }
-
 .proposed-action-card        { padding: 10px; border-bottom-width: 1px; border-bottom-color: rgba(255, 255, 255, 0.06); }
 .proposed-action-top         { flex-direction: row; align-items: center; margin-bottom: 4px; }
 .badge-create                { background-color: rgba(16, 185, 129, 0.16); color: #6EE7B7; padding: 2px 6px; border-radius: 4px; font-size: 11px; -unity-font-style: bold; margin-right: 8px; }
 .badge-modify                { background-color: rgba(217, 119, 6, 0.15); color: #FBBF24; padding: 2px 6px; border-radius: 4px; font-size: 11px; -unity-font-style: bold; margin-right: 8px; }
 .action-file-name            { color: #F1F5F9; -unity-font-style: bold; font-size: 12px; }
 .action-file-path            { color: #5B6B85; font-size: 11px; margin-bottom: 8px; }
-
 .action-reason-box  { background-color: rgba(11, 14, 20, 0.5); border-radius: 6px; padding: 6px; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 8px; border-width: 1px; border-color: rgba(255, 255, 255, 0.07); }
 .action-reason-text { color: #9FB0C8; font-size: 12px; }
 .badge-feature      { background-color: rgba(255, 255, 255, 0.06); color: #CBD5E1; padding: 2px 6px; border-radius: 4px; font-size: 11px; border-width: 1px; border-color: rgba(255, 255, 255, 0.10); }
-
 .action-buttons-row { flex-direction: row; justify-content: space-between; }
 .btn-diff   { flex-grow: 1; margin: 2px; background-color: rgba(255, 255, 255, 0.07); color: #F1F5F9; border-width: 0; padding: 6px; border-radius: 6px; font-size: 12px; transition-property: background-color; transition-duration: 0.15s; }
 .btn-diff:hover { background-color: rgba(255, 255, 255, 0.12); }
@@ -863,20 +740,13 @@
 .btn-apply:hover { background-color: #34D399; }
 .btn-reject { flex-grow: 1; margin: 2px; background-color: #DC2626; color: #FFF1F2; border-width: 0; padding: 6px; border-radius: 6px; font-size: 12px; -unity-font-style: bold; transition-property: background-color; transition-duration: 0.15s; }
 .btn-reject:hover { background-color: #EF4444; }
-
-/* ─── 15. Execution Plan ─────────────────────────────────────────────────── */
 .execution-plan-container { background-color: #141B26; border-radius: 8px; padding: 10px; margin-top: 10px; border-width: 1px; border-color: rgba(255, 255, 255, 0.09); }
 .execution-plan-title     { color: #E2E8F0; -unity-font-style: bold; margin-bottom: 6px; font-size: 13px; }
 .execution-plan-step      { color: #9FB0C8; font-size: 12px; margin-bottom: 4px; white-space: normal; }
-
-/* ─── 16. Message Action Buttons ─────────────────────────────────────────── */
 .chat-action-btn { background-color: transparent; border-width: 0; color: #64748B; font-size: 10px; padding: 2px 6px; margin-right: 4px; border-radius: 4px; cursor: link; transition-property: background-color, color; transition-duration: 0.12s; }
 .chat-action-btn:hover { background-color: rgba(45, 212, 191, 0.15); color: #2DD4BF; }
-
 .message-actions { flex-direction: row; position: absolute; bottom: -10px; right: 0px; padding: 2px 4px; display: none; }
 .chat-message-row:hover .message-actions { display: flex; }
-
-/* ─── 17. Legacy row classes (kept for ToolCallCard compatibility) ────────── */
 .chat-message-row         { flex-direction: row; margin-bottom: 32px; align-items: flex-start; }
 .chat-message-row-user    { flex-direction: row-reverse; }
 .avatar-container         { width: 28px; height: 28px; border-radius: 14px; align-items: center; justify-content: center; flex-shrink: 0; background-color: transparent; }
@@ -889,16 +759,12 @@
 .thinking-text            { color: #94A3B8; font-size: 14px; -unity-font-style: italic; margin-top: 4px; }
 .code-box                 { background-color: #0C0E14; padding: 12px; margin-top: 8px; margin-bottom: 8px; border-radius: 8px; border-left-width: 3px; border-left-color: #FF6B4A; }
 .code-text                { color: #F8FAFC; font-size: 13px; white-space: normal; }
-
-/* ─── 18. Bottom Fade ────────────────────────────────────────────────────── */
 .bottom-fade {
     height: 32px;
     position: absolute;
     bottom: 0; left: 0; right: 0;
     background-color: rgba(9, 10, 15, 0);
 }
-
-/* ─── 19. Inline @-Mention Asset Search ──────────────────────────────────── */
 .asset-mention-overlay {
     position: absolute;
     background-color: #131620;
@@ -908,7 +774,6 @@
     padding: 4px;
     overflow: hidden;
 }
-
 .asset-mention-row {
     display: flex;
     flex-direction: row;
@@ -932,8 +797,6 @@
     background-color: #FF6B4A;
     color: #ffffff;
 }
-
-/* ─── 20. Inline Approval Bar (code-built, referenced by NAME only) ──────── */
 #approval-bar {
     flex-direction: row;
     align-items: center;
@@ -945,7 +808,6 @@
     padding: 8px 12px;
     margin-bottom: 8px;
 }
-
 #approval-label {
     color: #F4D03F;
     font-size: 12px;
@@ -953,7 +815,6 @@
     margin-right: 10px;
     letter-spacing: 0.3px;
 }
-
 #approval-desc {
     color: #9FB0C8;
     font-size: 11px;
@@ -962,7 +823,6 @@
     white-space: normal;
     min-width: 0;
 }
-
 #btn-approve {
     background-color: #10B981;
     border-width: 0;
@@ -976,7 +836,6 @@
     transition-duration: 0.15s;
 }
 #btn-approve:hover { background-color: #34D399; }
-
 #btn-deny {
     background-color: rgba(220, 38, 38, 0.16);
     border-width: 1px;
@@ -991,8 +850,6 @@
     transition-duration: 0.15s;
 }
 #btn-deny:hover { background-color: #DC2626; color: #FFFFFF; border-color: #DC2626; }
-
-/* ─── 21. Todo Progress Card (Visual Task Checklist) ─────────────────────── */
 .brody-todo-card {
     background-color: rgba(18, 20, 30, 0.88);
     border-radius: 10px;
@@ -1005,11 +862,9 @@
     transition-property: border-color, background-color;
     transition-duration: 0.18s;
 }
-
 .brody-todo-card:hover {
     border-color: rgba(255, 107, 74, 0.45);
 }
-
 .brody-todo-card__header {
     background-color: rgba(255, 255, 255, 0.04);
     padding: 8px 12px;
@@ -1023,25 +878,21 @@
 .brody-todo-card__header:hover {
     background-color: rgba(255, 107, 74, 0.08);
 }
-
 .brody-todo-title-row {
     flex-direction: row;
     align-items: center;
 }
-
 .brody-todo-icon {
     font-size: 13px;
     margin-right: 6px;
     color: #FF6B4A;
 }
-
 .brody-todo-title {
     color: #F8FAFC;
     font-size: 12px;
     -unity-font-style: bold;
     letter-spacing: 0.3px;
 }
-
 .brody-todo-badge {
     background-color: rgba(255, 107, 74, 0.12);
     border-width: 1px;
@@ -1053,13 +904,11 @@
     border-radius: 10px;
     margin-left: 8px;
 }
-
 .brody-todo-badge--all-done {
     background-color: rgba(16, 185, 129, 0.18);
     border-color: rgba(16, 185, 129, 0.4);
     color: #6EE7B7;
 }
-
 .brody-todo-progress-track {
     height: 3px;
     background-color: rgba(255, 255, 255, 0.06);
@@ -1070,7 +919,6 @@
     margin-left: 12px;
     margin-right: 12px;
 }
-
 .brody-todo-progress-bar {
     height: 100%;
     background-color: #FF6B4A;
@@ -1078,12 +926,10 @@
     transition-property: width;
     transition-duration: 0.25s;
 }
-
 .brody-todo-card__body {
     padding: 8px 12px;
     background-color: rgba(9, 10, 15, 0.45);
 }
-
 .brody-todo-item {
     flex-direction: row;
     align-items: center;
@@ -1095,11 +941,9 @@
     transition-property: background-color;
     transition-duration: 0.15s;
 }
-
 .brody-todo-item:hover {
     background-color: rgba(255, 255, 255, 0.05);
 }
-
 .brody-todo-item__glyph {
     width: 20px;
     height: 20px;
@@ -1111,38 +955,31 @@
     flex-shrink: 0;
     cursor: link;
 }
-
 .brody-todo-item__glyph--pending {
     color: #94A3B8;
     background-color: rgba(255, 255, 255, 0.06);
 }
-
 .brody-todo-item__glyph--inprogress {
     color: #F4D03F;
     background-color: rgba(244, 208, 63, 0.18);
 }
-
 .brody-todo-item__glyph--completed {
     color: #10B981;
     background-color: rgba(16, 185, 129, 0.18);
 }
-
 .brody-todo-item__glyph--failed {
     color: #EF4444;
     background-color: rgba(220, 38, 38, 0.20);
 }
-
 .brody-todo-item__desc {
     color: #E2E8F0;
     font-size: 12px;
     flex-grow: 1;
     white-space: normal;
 }
-
 .brody-todo-item__desc--completed {
     color: #94A3B8;
 }
-
 .brody-todo-item__tag {
     font-size: 9px;
     padding: 1px 6px;
@@ -1153,8 +990,6 @@
     border-width: 1px;
     border-color: rgba(255, 255, 255, 0.08);
 }
-
-/* ─── 22. Visual Code Diff Preview ───────────────────────────────────────── */
 .brody-diff-container {
     background-color: #0A0E15;
     border-radius: 8px;
@@ -1165,7 +1000,6 @@
     overflow: hidden;
     align-self: stretch;
 }
-
 .brody-diff-header {
     background-color: rgba(255, 255, 255, 0.04);
     padding: 6px 10px;
@@ -1175,52 +1009,43 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .brody-diff-filepath {
     color: #F4D03F;
     font-size: 11px;
     -unity-font-style: bold;
     letter-spacing: 0.4px;
 }
-
 .brody-diff-stats {
     flex-direction: row;
     align-items: center;
 }
-
 .brody-diff-stat-add {
     color: #10B981;
     font-size: 11px;
     -unity-font-style: bold;
     margin-right: 6px;
 }
-
 .brody-diff-stat-del {
     color: #EF4444;
     font-size: 11px;
     -unity-font-style: bold;
 }
-
 .brody-diff-scroll {
     max-height: 260px;
     padding: 4px 0;
 }
-
 .brody-diff-row {
     flex-direction: row;
     align-items: center;
     padding: 1px 6px;
     min-height: 18px;
 }
-
 .brody-diff-row--add {
     background-color: rgba(16, 185, 129, 0.12);
 }
-
 .brody-diff-row--del {
     background-color: rgba(220, 38, 38, 0.15);
 }
-
 .brody-diff-row--hunk {
     background-color: rgba(255, 107, 74, 0.08);
     border-top-width: 1px;
@@ -1229,7 +1054,6 @@
     border-bottom-color: rgba(255, 107, 74, 0.18);
     margin: 2px 0;
 }
-
 .brody-diff-linenum {
     width: 32px;
     font-size: 11px;
@@ -1238,7 +1062,6 @@
     margin-right: 8px;
     flex-shrink: 0;
 }
-
 .brody-diff-prefix {
     width: 14px;
     font-size: 11px;
@@ -1246,34 +1069,27 @@
     -unity-text-align: middle-center;
     flex-shrink: 0;
 }
-
 .brody-diff-prefix--add {
     color: #10B981;
 }
-
 .brody-diff-prefix--del {
     color: #EF4444;
 }
-
 .brody-diff-prefix--hunk {
     color: #FF8566;
 }
-
 .brody-diff-text {
     font-size: 11px;
     color: #C8D2E0;
     white-space: pre;
     flex-grow: 1;
 }
-
 .brody-diff-text--add {
     color: #86EFAC;
 }
-
 .brody-diff-text--del {
     color: #FCA5A5;
 }
-
 .brody-diff-text--hunk {
     color: #FFD180;
     -unity-font-style: italic;

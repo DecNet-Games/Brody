@@ -1,11 +1,8 @@
-/* Brody AI · Diff Review · dark accent #00d2ff */
-.drv-root {
+﻿.drv-root {
     background-color: #0A0F1E;
     flex-grow: 1;
     flex-direction: column;
 }
-
-/* ── Header ── */
 .drv-header {
     flex-direction: row;
     align-items: center;
@@ -41,8 +38,6 @@
     white-space: nowrap;
 }
 .drv-nav-btn:hover { background-color: #2563EB; color: #ffffff; }
-
-/* ── Summary / apply bar ── */
 .drv-summary {
     flex-direction: row;
     align-items: center;
@@ -66,8 +61,6 @@
 }
 .drv-apply-btn:hover { background-color: #16803C; color: #ffffff; }
 .drv-apply-btn--disabled { background-color: #1E2D4A; color: #64748B; }
-
-/* ── Panes ── */
 .drv-panes { flex-direction: row; flex-grow: 1; overflow: hidden; }
 .drv-pane { flex-grow: 1; flex-direction: column; min-width: 0; }
 .drv-pane-header {
@@ -80,10 +73,7 @@
 .drv-before-header { color: #F87171; background-color: rgba(127, 29, 29, 0.35); border-bottom-width: 1px; border-bottom-color: #1E2D4A; }
 .drv-after-header  { color: #4ADE80; background-color: rgba(20, 83, 45, 0.35); border-bottom-width: 1px; border-bottom-color: #1E2D4A; }
 .drv-divider { width: 1px; background-color: #1E2D4A; flex-shrink: 0; }
-
 .drv-scroll { flex-grow: 1; background-color: #060A14; }
-
-/* ── A single side-by-side diff row ── */
 .drv-row { flex-direction: row; }
 .drv-gutter { width: 40px; background-color: #0D1424; flex-shrink: 0; }
 .drv-gutter-text {
@@ -102,16 +92,11 @@
     white-space: nowrap;
     overflow: hidden;
 }
-
-/* unchanged */
 .drv-row--same .drv-line { background-color: #060A14; }
-/* deletion (left / before) */
 .drv-row--del .drv-line { background-color: rgba(127, 29, 29, 0.35); }
 .drv-row--del .drv-line-text { color: #FCA5A5; }
-/* addition (right / after) */
 .drv-row--add .drv-line { background-color: rgba(20, 83, 45, 0.35); }
 .drv-row--add .drv-line-text { color: #86EFAC; }
-/* hunk marker row */
 .drv-hunk-row {
     flex-direction: row;
     align-items: center;
