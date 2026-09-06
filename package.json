@@ -1,9 +1,9 @@
-{
+﻿{
   "name": "com.decnet.brodyai",
   "version": "1.0.0",
   "displayName": "Brody AI",
-  "description": "The ultimate autonomous AI agent for Unity. Generates scripts, edits scenes, automates tools, and researches online directly inside the Unity Editor.",
-  "unity": "2022.3",
+  "description": "The ultimate autonomous AI game developer for Unity. Generates scripts, edits scenes, automates tools, and researches online directly inside Unity 2021.3+, 2022.3+, and Unity 6.",
+  "unity": "2021.3",
   "author": {
     "name": "Decnet Games",
     "email": "contact@decnetgames.com",
