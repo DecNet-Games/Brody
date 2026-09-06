@@ -1,4 +1,4 @@
-﻿# âš¡ Brody â€” Your Game Dev Homie.
+﻿# Brody - Your Game Dev Homie.
 
 > **The ultimate autonomous AI agent for Unity.** Generates scripts, edits scenes, automates tools, and researches online directly inside the Unity Editor.
 
