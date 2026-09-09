@@ -1,29 +1,40 @@
-# ⚡ Brody — Your Game Dev Homie.
+<div align="center">
 
-> **The ultimate autonomous AI agent for Unity.** Generates scripts, edits scenes, automates tools, and researches online directly inside the Unity Editor.
+# Brody — Your Game Dev Homie
 
-[![Unity 2021.3+](https://img.shields.io/badge/Unity-2021.3%2B%20%7C%202022.3%2B%20%7C%20Unity%206-black?logo=unity)](https://unity.com/)
-[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-orange.svg)](LICENSE.md)
-[![Website](https://img.shields.io/badge/Website-brody.decnetgames.com-blue)](https://brody.decnetgames.com)
+**The autonomous, in-editor AI co-developer engineered specifically for Unity.**  
+Generates production C# scripts, constructs scenes, orchestrates toolchains, and verifies builds live.
 
----
+[![Unity 2021.3+](https://img.shields.io/badge/Unity-2021.3%2B%20%7C%202022.3%2B%20%7C%20Unity%206-black?style=for-the-badge&logo=unity)](https://unity.com/)
+[![Release Status](https://img.shields.io/badge/Status-Tester%20Release%20v1.0-0972d3?style=for-the-badge)](https://github.com/DecNet-Games/Brody)
+[![License](https://img.shields.io/badge/License-Proprietary-f0883e?style=for-the-badge)](LICENSE.md)
+[![Website](https://img.shields.io/badge/Portal-brody.decnetgames.com-10b981?style=for-the-badge)](https://brody.decnetgames.com)
 
-## 🌟 Why Brody?
-
-Unlike ordinary LLM code generators that only spit out snippets in a separate browser tab, **Brody directly controls and orchestrates the Unity Editor**:
-
-- 🧠 **Autonomous Engine Operations**: Creates GameObjects, wires components, modifies transforms, and manages prefabs automatically.
-- 🌐 **In-Editor Web Search**: Need documentation, asset references, or forum answers? Brody researches the live web and Unity docs right inside your chat window. You never need to leave Unity.
-- 🛡️ **Roslyn Pre-Compiler Shield**: Every C# script synthesized by Brody undergoes pre-compilation AST validation to eliminate compiler errors and deprecated APIs before saving.
-- ⚡ **Zero-Latency Streaming**: Powered by high-speed neural reasoning engines with real-time SSE streaming.
-- ⏪ **1-Click Safety Checkpoints**: Serialized undo checkpoints ensure you can instantly revert any scene or script modifications with a single click.
+</div>
 
 ---
 
-## 🚀 Installation via Unity Package Manager (UPM)
+> [!IMPORTANT]
+> **Tester Release Notice**: This package is an active tester preview for beta developers. Before integrating Brody into active production projects, please ensure your project is backed up or committed to version control (Git, Plastic SCM, or Perforce).
 
-### Method 1: Git URL (Recommended)
-1. In Unity Editor, open **Window** ➔ **Package Manager**.
+---
+
+## Core Capabilities
+
+Unlike standard LLM code assistants that only emit snippets in a browser tab, **Brody directly controls and orchestrates the Unity Editor**:
+
+- **Autonomous Engine Operations**: Instantiates GameObjects, configures transforms, binds components, and creates prefabs natively.
+- **In-Editor Web & Documentation Search**: Retrieves live Unity documentation, API references, and technical solutions right within the editor.
+- **Roslyn AST Pre-Compiler Guard**: Validates synthesized C# code against compiler rules and obsolete APIs before saving to disk.
+- **High-Speed Streaming Engine**: Real-time server-sent event (SSE) token streaming for responsive pair programming.
+- **Deterministic Undo Checkpoints**: Serialized editor state snapshots allow 1-click reversions for any scene or script modifications.
+
+---
+
+## Installation via Unity Package Manager (UPM)
+
+### Option 1: Git URL (Recommended)
+1. In the Unity Editor, navigate to **Window** ➔ **Package Manager**.
 2. Click the **`+`** icon in the top-left toolbar.
 3. Select **Add package from git URL...**
 4. Paste the repository URL:
@@ -32,8 +43,8 @@ Unlike ordinary LLM code generators that only spit out snippets in a separate br
    ```
 5. Click **Add**. Unity will import and initialize Brody automatically.
 
-### Method 2: Add to `Packages/manifest.json`
-Open your Unity project's `Packages/manifest.json` and add to the `dependencies` object:
+### Option 2: Add via `Packages/manifest.json`
+Open your project's `Packages/manifest.json` and add to the `dependencies` block:
 ```json
 {
   "dependencies": {
@@ -44,28 +55,28 @@ Open your Unity project's `Packages/manifest.json` and add to the `dependencies`
 
 ---
 
-## 🎮 Quickstart
+## Quickstart
 
 1. **Open the Brody Window**:
-   - Go to top menu: **Brody ➔ Open Brody Chat** (or press `Ctrl+Shift+B` / `Cmd+Shift+B`).
-2. **Connect Your Account**:
-   - Click **Brody ➔ Account & Settings ➔ Cloud Sign In**.
+   - Menu: **Brody ➔ Open Brody Chat** (or press `Ctrl+Shift+B` / `Cmd+Shift+B`).
+2. **Authenticate**:
+   - Menu: **Brody ➔ Account & Settings ➔ Cloud Sign In**.
    - Enter your Brody Access Key or sign in via browser.
-3. **Start Building**:
-   - Ask Brody: *"Create a smooth 2D character controller with double-jump, coyote time, and particle effects."*
-   - Watch Brody write the C# script, attach components, and configure your scene live.
+3. **Prompt & Build**:
+   - Enter your requirements (e.g., *"Create a smooth 2D character controller with double-jump, coyote time, and particle effects."*).
+   - Brody inspects the codebase, creates the scripts, and configures the scene automatically.
 
 ---
 
-## 🗺️ Upcoming Features (Roadmap)
+## Roadmap
 
-- 🎨 **Native 3D Mesh & Asset Synthesis**: Generate low-poly 3D models, textures, and PBR materials directly in the Unity scene via Brody's autonomous toolchain.
-- 🔌 **Visual Scripting & Shader Graph**: Automated AI node graph authoring and wiring.
-- 💻 **Local Model Support (BYOK & Ollama)**: Run private local GGUF models offline.
+- **Procedural 3D Mesh & Material Synthesis**: In-editor texture and model creation pipelines.
+- **Shader Graph & Visual Scripting**: Automated node graph generation.
+- **Local Model Support**: Offline LLM execution via Ollama and BYOK.
 
 ---
 
-## 📄 License & Support
+## License & Support
 
 Brody is developed and maintained by **[Decnet Games](https://brody.decnetgames.com)**.  
 For documentation, tutorials, and cloud access keys, visit **[brody.decnetgames.com](https://brody.decnetgames.com)**.
