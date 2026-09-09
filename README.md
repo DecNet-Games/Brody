@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="brody-logo.png" alt="Brody AI" width="540" />
+
 # Brody — Your Game Dev Homie
 
 **The autonomous, in-editor AI co-developer engineered specifically for Unity.**  
